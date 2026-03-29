@@ -1,0 +1,8 @@
+bin/
+build/
+out/
+*.prg
+*.iq
+*.barrel
+.DS_Store
+.vscode/settings.json

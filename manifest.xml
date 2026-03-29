@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iq:application xmlns:iq="http://www.garmin.com/xml/connectiq"
+id="com.oliver.roco"
+type="watchface"
+name="@Strings.AppName"
+entry="RocoApp"
+launcherIcon="@Drawables.LauncherIcon"
+minApiLevel="3.0.0">
+
+<iq:products>
+<iq:product id="fr965"/>
+</iq:products>
+
+<iq:permissions/>
+<iq:languages>
+<iq:language>eng</iq:language>
+</iq:languages>
+
+<iq:resources>
+<iq:resource>resources/resources.xml</iq:resource>
+</iq:resources>
+</iq:application>
