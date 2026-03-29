@@ -6,3 +6,4 @@ out/
 *.barrel
 .DS_Store
 .vscode/settings.json
+keys/

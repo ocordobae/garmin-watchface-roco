@@ -9,10 +9,10 @@ function initialize() {
 WatchFace.initialize();
 }
 
-function onLayout(dc as Dc) {
+function onLayout(dc) {
 }
 
-function onUpdate(dc as Dc) {
+function onUpdate(dc) {
 var width = dc.getWidth();
 var height = dc.getHeight();
 
