@@ -5,6 +5,8 @@ using Toybox.Math;
 
 class RocoView extends WatchUi.WatchFace {
 
+var _lowPower = false;
+
 function initialize() {
 WatchFace.initialize();
 }
@@ -12,7 +14,19 @@ WatchFace.initialize();
 function onLayout(dc) {
 }
 
-function onUpdate(dc) {
+function onShow() {
+_lowPower = false;
+}
+
+function onEnterSleep() {
+_lowPower = true;
+}
+
+function onExitSleep() {
+_lowPower = false;
+}
+
+function drawScene(dc) {
 var width = dc.getWidth();
 var height = dc.getHeight();
 var cx = width / 2;
@@ -24,13 +38,10 @@ var hour = now.hour % 12;
 
 var dialSize = (width < height ? width : height);
 
-// CAMBIA ESTO A true PARA PROBAR MODO AHORRO MANUALMENTE
-var lowPower = true;
-
 var bgColor;
 var fgColor;
 
-if (lowPower) {
+if (_lowPower) {
 // modo ahorro
 bgColor = Graphics.COLOR_BLACK;
 fgColor = Graphics.createColor(0xFF, 0xB2, 0x22, 0x22);
@@ -89,5 +100,9 @@ var hourX = cx + (Math.cos(hourAngle) * hourOrbit);
 var hourY = cy + (Math.sin(hourAngle) * hourOrbit);
 
 dc.fillCircle(hourX, hourY, hourRadius);
+}
+
+function onUpdate(dc) {
+drawScene(dc);
 }
 }
