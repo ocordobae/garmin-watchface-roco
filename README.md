@@ -33,6 +33,10 @@ The goal is a clean, geometric, high-contrast watch face inspired by minimalist 
 - **Hours:** single black dot
 - **Style:** quiet, geometric, uncluttered
 
+![Roco Minimal preview](images/mostaza jpeg.jpg)
+
+
+
 ## Target Device
 
 - Garmin Forerunner 965 (`fr965`)
