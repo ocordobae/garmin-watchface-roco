@@ -33,7 +33,7 @@ The goal is a clean, geometric, high-contrast watch face inspired by minimalist 
 - **Hours:** single black dot
 - **Style:** quiet, geometric, uncluttered
 
-![Roco Minimal preview]('\mostaza jpeg.jpg')
+![Roco Minimal preview]('/mostaza jpeg.jpg')
 
 
 
